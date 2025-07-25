@@ -1,4 +1,4 @@
-# Postgresus Website
+# Rostislav Dugin Website
 
 ## CSS Development Workflow
 

@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Minified TailwindCSS -->
+    <link rel="stylesheet" href="styles.min.css" />
+
+    <!-- Primary Meta Tags -->
+    <title>Rostislav Dugin | Full-Stack Go Developer & CTO</title>
+    <meta name="title" content="Rostislav Dugin | Full-Stack Go Developer & CTO" />
+    <meta
+      name="description"
+      content="Experienced full-stack developer specializing in Go and React. CTO & Co-founder at TgTaps with expertise in building scalable applications and leading tech teams."
+    />
+    <meta
+      name="keywords"
+      content="Rostislav Dugin, Go Developer, Full-Stack Developer, CTO, React, PostgreSQL, Docker, Team Lead, Startup, TgTaps"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="language" content="en" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="author" content="Rostislav Dugin" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="canonical" href="https://rostislav-dugin.com" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rostislav-dugin.com" />
+    <meta property="og:title" content="Rostislav Dugin | Full-Stack Go Developer & CTO" />
+    <meta
+      property="og:description"
+      content="Experienced full-stack developer specializing in Go and React. CTO & Co-founder at TgTaps with expertise in building scalable applications and leading tech teams."
+    />
+    <meta property="og:image" content="https://rostislav-dugin.com/rostislav.jpg" />
+    <meta property="og:site_name" content="Rostislav Dugin" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rostislav-dugin.com" />
+    <meta property="twitter:title" content="Rostislav Dugin | Full-Stack Go Developer & CTO" />
+    <meta
+      property="twitter:description"
+      content="Experienced full-stack developer specializing in Go and React. CTO & Co-founder at TgTaps with expertise in building scalable applications and leading tech teams."
+    />
+    <meta property="twitter:image" content="https://rostislav-dugin.com/rostislav.jpg" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rostislav Dugin",
+        "jobTitle": "Full-Stack Go Developer & CTO",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "TgTaps"
+        },
+        "url": "https://rostislav-dugin.com",
+        "image": "https://rostislav-dugin.com/rostislav.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/rostislavdugin",
+          "https://github.com/RostislavDugin",
+          "https://medium.com/@rostislavdugin",
+          "https://dev.to/rostislav_dugin",
+          "https://t.me/rostislav_dugin"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tbilisi",
+          "addressCountry": "Georgia"
+        },
+        "email": "rostislav.dugin@outlook.com",
+        "knowsAbout": [
+          "Go Programming",
+          "React",
+          "TypeScript",
+          "PostgreSQL",
+          "Docker",
+          "System Architecture",
+          "Team Leadership",
+          "Full-Stack Development"
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- DayJS -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/plugin/relativeTime.js"></script>
+    <script>
+      dayjs.extend(window.dayjs_plugin_relativeTime);
+    </script>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Main CV Section -->
+    <div class="px-0 py-6 sm:px-4">
+      <div class="mx-auto max-w-6xl overflow-hidden bg-white shadow-lg sm:rounded-lg">
+        <!-- About Section -->
+        <div class="lg:flex">
+          <!-- Photo -->
+          <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-6 text-white lg:w-1/4">
+            <div class="text-center">
+              <img
+                src="rostislav.jpg"
+                alt="Rostislav Dugin"
+                class="mx-auto mb-3 max-w-[250px] rounded border-2 border-white object-cover shadow-lg"
+                loading="eager"
+              />
+              <h1 class="mb-2 text-lg font-bold">Rostislav Dugin</h1>
+              <p class="mb-3 text-xs text-blue-200">
+                Co-founder & CTO at TgTaps | Full-Stack Go Developer
+              </p>
+
+              <div class="space-y-2 text-left text-sm">
+                <div class="flex items-center">
+                  <svg class="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                  <span>Tbilisi, Georgia</span>
+                </div>
+                <a
+                  href="https://t.me/rostislav_dugin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center text-white transition-colors hover:text-blue-200"
+                >
+                  <svg class="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 1.789-.896 6.728-.896 6.728-.379 1.381-.945 1.621-1.551 1.621-.66 0-1.086-.27-1.407-.486l-3.054-2.265-1.449 1.382a.6.6 0 0 1-.43.182l.151-2.073 3.905-3.529c.169-.151-.037-.234-.263-.082l-4.823 3.043-2.082-.648c-.449-.141-.456-.449.093-.667l8.123-3.137c.372-.141.698.089.583.681z"
+                    />
+                  </svg>
+                  <span>@rostislav_dugin (contact here)</span>
+                </a>
+                <a
+                  href="mailto:rostislav.dugin@outlook.com"
+                  class="flex items-center text-white transition-colors hover:text-blue-200"
+                >
+                  <svg class="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                  <span>rostislav.dugin@outlook.com</span>
+                </a>
+
+                <div class="pt-5"></div>
+                <a
+                  href="https://www.linkedin.com/in/rostislavdugin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center text-white transition-colors hover:text-blue-200"
+                >
+                  <svg class="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href="https://github.com/RostislavDugin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center text-white transition-colors hover:text-blue-200"
+                >
+                  <svg class="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a
+                  href="https://medium.com/@rostislavdugin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center text-white transition-colors hover:text-blue-200"
+                >
+                  <svg class="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"
+                    />
+                  </svg>
+                  <span>Medium</span>
+                </a>
+                <a
+                  href="https://dev.to/rostislav_dugin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center text-white transition-colors hover:text-blue-200"
+                >
+                  <svg class="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z"
+                    />
+                  </svg>
+                  <span>Dev.to</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Content -->
+          <div class="p-8 lg:w-3/4">
+            <h2 class="mb-6 text-3xl font-bold text-gray-800">About Me</h2>
+            <div class="prose prose-lg mb-8 max-w-[450px] text-sm text-gray-600 sm:text-base">
+              <p class="mb-4">
+                Experienced full-stack developer specializing in <strong>Go and React</strong>,
+                currently working as CTO & Co-founder at TgTaps. I have extensive experience in
+                building scalable tech teams and development processes from hiring and onboarding to
+                CI/CD, monitoring, and scaling.
+              </p>
+              <p class="mb-4">
+                Main contributor to
+                <a
+                  href="https://postgresus.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-600 hover:text-blue-800"
+                  >postgresus.com</a
+                >
+                - an open-source PostgreSQL backup and monitoring tool.
+              </p>
+              <p class="mb-4">
+                I'm passionate about taking responsibility for solving real-world problems with
+                technology and sharing my experience through articles and posts.
+              </p>
+              <p class="text-sm italic text-gray-500 sm:text-base">
+                Fun fact: When I was 13 years old, I installed Debian on my Android phone and
+                started coding in Java
+              </p>
+            </div>
+
+            <!-- Key Skills -->
+            <div class="mb-8">
+              <h3 class="mb-4 text-xl font-bold text-gray-800">Top Skills</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >Go</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >React</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >TypeScript</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >Java</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >PostgreSQL</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >RabbitMQ</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >Docker</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >DDD</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >Event Sourcing</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >Open Source</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >System Architecture</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >CI/CD</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >GitLab</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >Vite</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >TailwindCSS</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >Prometheus</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >Team Leadership</span
+                >
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800"
+                  >Startup</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="border-t border-gray-200 p-8">
+          <h2 class="mb-8 text-3xl font-bold text-gray-800">Professional Experience</h2>
+
+          <!-- TgTaps -->
+          <div class="mb-8 border-l-4 border-blue-600 pl-3 sm:pl-6">
+            <div class="mb-2 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-gray-800">
+                  Co-founder & CTO | Full-Stack Go Developer
+                </h3>
+                <h4 class="text-lg font-semibold text-blue-600">TgTaps</h4>
+              </div>
+              <div class="text-sm text-gray-500">
+                <span class="rounded bg-gray-100 px-2 py-1">Sep 2024 - Present</span>
+                <span class="ml-2" id="tgtaps-duration"></span>
+              </div>
+            </div>
+            <p class="mb-2 text-gray-600">📍 Zurich, Switzerland</p>
+            <p class="mb-4 text-sm text-gray-700 sm:text-base">
+              TgTaps is a no-code builder for Telegram mini-apps and marketing funnels.
+            </p>
+
+            <div class="mb-4">
+              <h5 class="mb-2 font-semibold text-gray-800">Key Achievements:</h5>
+              <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                <li>
+                  Invented a no-code builder to automate custom development of Telegram Mini Apps
+                </li>
+                <li>
+                  Took the project from idea to stable product with ~125,000 MAU and ~$30,000 MRR
+                </li>
+                <li>Assembled a development team of 7 people (backend, frontend, QA)</li>
+                <li>Helped accelerate sales scaling through automated affiliate program</li>
+              </ul>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="mb-2 font-semibold text-gray-800">Responsibilities:</h5>
+              <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                <li>Establishment of development process, including CI/CD and testing</li>
+                <li>Definition of product requirements and prioritizing development</li>
+                <li>Hiring, onboarding and motivating the technical team</li>
+                <li>Development of project functionality (Go + React)</li>
+                <li>
+                  Designing project architecture with consideration for load and business
+                  requirements (DDD, Event Storming)
+                </li>
+                <li>Scaling the project for load requirements without extra spending</li>
+                <li>Keeping monitoring of infrastructure and app (metrics, logs, bug tracking)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="mb-2 font-semibold text-gray-800">Technologies:</h5>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800">Go</span>
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800">React</span>
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800"
+                  >TypeScript</span
+                >
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800"
+                  >PostgreSQL</span
+                >
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800">RabbitMQ</span>
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800">Docker</span>
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800"
+                  >GitLab CI/CD</span
+                >
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800">Traefik</span>
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800"
+                  >TailwindCSS</span
+                >
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800">Redux</span>
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800"
+                  >Prometheus</span
+                >
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800">Grafana</span>
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800">Sentry</span>
+                <span class="rounded bg-green-100 px-2 py-1 text-xs text-green-800">Graylog</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DataOx -->
+          <div class="mb-12 border-l-4 border-gray-400 pl-3 sm:pl-6">
+            <!-- Company Header -->
+            <div class="mb-6 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">DataOx</h3>
+                <p class="text-gray-600">
+                  📍 Delaware, United States • Atlanta, Georgia, United States
+                </p>
+              </div>
+              <div class="text-sm text-gray-500">
+                <span class="rounded bg-gray-100 px-2 py-1">Mar 2020 - Aug 2024</span>
+                <span class="ml-2" id="dataox-total-duration"></span>
+              </div>
+            </div>
+
+            <p class="mb-6 max-w-[600px] text-sm text-gray-700 sm:text-base">
+              Outsourcing studio specialized in custom development. Worked on multiple projects from
+              e-commerce platforms to analytical crypto platforms (SaaS services).
+            </p>
+
+            <!-- Team Lead Role -->
+            <div class="mb-8 ml-2 border-l-2 border-gray-300 pl-2 sm:ml-4 sm:pl-4">
+              <div class="mb-2 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+                <div>
+                  <h4 class="text-lg font-bold text-gray-800">Team Lead Full-Stack (Go / React)</h4>
+                </div>
+                <div class="text-sm text-gray-500">
+                  <span class="rounded bg-gray-100 px-2 py-1">May 2022 - Aug 2024</span>
+                  <span class="ml-2" id="dataox-lead-duration"></span>
+                </div>
+              </div>
+              <p class="mb-4 max-w-[600px] text-sm text-gray-700 sm:text-base">
+                Developed an analytical crypto platform (SaaS service). The project collected data
+                on Ethereum and Solana transactions, analyzed them, and notified clients about
+                predictions.
+              </p>
+
+              <div class="mb-4">
+                <h5 class="mb-2 font-semibold text-gray-800">Key Achievements:</h5>
+                <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                  <li>Created a team of 5 permanent employees (4 developers, 1 QA)</li>
+                  <li>Took the product from idea to ~500 paying users with high revenue</li>
+                  <li>Established workflow process including continuous deployment and testing</li>
+                </ul>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="mb-2 font-semibold text-gray-800">Responsibilities:</h5>
+                <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                  <li>Architecture creation (DDD, Event Storming)</li>
+                  <li>Management of a team of 5 people (hiring, building onboarding process)</li>
+                  <li>Organizing backend and frontend development, integration with ML service</li>
+                  <li>Development of backend (~80%) and frontend (~20%)</li>
+                  <li>Keeping monitoring of infrastructure and app</li>
+                </ul>
+              </div>
+
+              <div>
+                <h5 class="mb-2 font-semibold text-gray-800">Technologies:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800">Go</span>
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800">React</span>
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >TypeScript</span
+                  >
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >PostgreSQL</span
+                  >
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >RabbitMQ</span
+                  >
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >Python</span
+                  >
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >Docker</span
+                  >
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >GitLab CI/CD</span
+                  >
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >TailwindCSS</span
+                  >
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800">Redux</span>
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >Crypto Libraries</span
+                  >
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >Ethereum</span
+                  >
+                  <span class="rounded bg-purple-100 px-2 py-1 text-xs text-purple-800"
+                    >Solana</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Senior Role -->
+            <div class="mb-8 ml-2 border-l-2 border-gray-300 pl-2 sm:ml-4 sm:pl-4">
+              <div class="mb-2 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+                <div>
+                  <h4 class="text-lg font-bold text-gray-800">
+                    Senior Full-Stack Developer (Java / React)
+                  </h4>
+                </div>
+                <div class="text-sm text-gray-500">
+                  <span class="rounded bg-gray-100 px-2 py-1">Mar 2021 - Apr 2022</span>
+                  <span class="ml-2" id="dataox-senior-duration"></span>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="mb-2 font-semibold text-gray-800">Key Achievements:</h5>
+                <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                  <li>
+                    Developed and launched online booking system for US and Canadian markets
+                    (~100,000 MAU, ~500 bookings/day)
+                  </li>
+                  <li>Maintained main e-commerce platform (~1,000,000 MAU, ~5,000 orders/day)</li>
+                  <li>Migrated project to NextJS, achieving increased traffic through SEO</li>
+                </ul>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="mb-2 font-semibold text-gray-800">Responsibilities:</h5>
+                <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                  <li>
+                    Development of e-commerce platform and online booking system (fast food &
+                    retail)
+                  </li>
+                  <li>Testing both backend and frontend code</li>
+                  <li>Optimizing CI/CD for greater number of servers</li>
+                  <li>Interviewing and mentoring new developers</li>
+                </ul>
+              </div>
+
+              <div>
+                <h5 class="mb-2 font-semibold text-gray-800">Technologies:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800"
+                    >Java 11</span
+                  >
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800"
+                    >Spring Boot</span
+                  >
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800"
+                    >Hibernate</span
+                  >
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800">React</span>
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800"
+                    >NextJS</span
+                  >
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800"
+                    >TypeScript</span
+                  >
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800"
+                    >PostgreSQL</span
+                  >
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800">Redis</span>
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800"
+                    >Bootstrap 4</span
+                  >
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800">Redux</span>
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800"
+                    >Bitbucket CI/CD</span
+                  >
+                  <span class="rounded bg-orange-100 px-2 py-1 text-xs text-orange-800">Jira</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Middle Role -->
+            <div class="mb-8 ml-2 border-l-2 border-gray-300 pl-2 sm:ml-4 sm:pl-4">
+              <div class="mb-2 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+                <div>
+                  <h4 class="text-lg font-bold text-gray-800">
+                    Middle Full-Stack Developer (Java / React)
+                  </h4>
+                </div>
+                <div class="text-sm text-gray-500">
+                  <span class="rounded bg-gray-100 px-2 py-1">Mar 2020 - Feb 2021</span>
+                  <span class="ml-2" id="dataox-middle-duration"></span>
+                </div>
+              </div>
+              <p class="mb-4 text-sm text-gray-700 sm:text-base">
+                Specialized in custom outsourced development. Team was hired to expand existing POS
+                system to launch online during Covid.
+              </p>
+
+              <div class="mb-4">
+                <h5 class="mb-2 font-semibold text-gray-800">Key Achievements:</h5>
+                <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                  <li>
+                    Developed and launched e-commerce platforms from scratch reaching ~500,000 MAU
+                    and ~2,500 orders/day
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="mb-2 font-semibold text-gray-800">Responsibilities:</h5>
+                <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                  <li>
+                    Development of e-commerce platform for US and Canadian markets (fast food &
+                    retail)
+                  </li>
+                  <li>Development of control panel for end client companies using the platform</li>
+                </ul>
+              </div>
+
+              <div>
+                <h5 class="mb-2 font-semibold text-gray-800">Technologies:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded bg-red-100 px-2 py-1 text-xs text-red-800">Java 11</span>
+                  <span class="rounded bg-red-100 px-2 py-1 text-xs text-red-800">Spring Boot</span>
+                  <span class="rounded bg-red-100 px-2 py-1 text-xs text-red-800">Hibernate</span>
+                  <span class="rounded bg-red-100 px-2 py-1 text-xs text-red-800">React</span>
+                  <span class="rounded bg-red-100 px-2 py-1 text-xs text-red-800">TypeScript</span>
+                  <span class="rounded bg-red-100 px-2 py-1 text-xs text-red-800">PostgreSQL</span>
+                  <span class="rounded bg-red-100 px-2 py-1 text-xs text-red-800">Redis</span>
+                  <span class="rounded bg-red-100 px-2 py-1 text-xs text-red-800">Bootstrap 4</span>
+                  <span class="rounded bg-red-100 px-2 py-1 text-xs text-red-800">Redux</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- IntroLab Systems -->
+          <div class="mb-12 border-l-4 border-indigo-400 pl-3 sm:pl-6">
+            <!-- Company Header -->
+            <div class="mb-6 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">IntroLab Systems</h3>
+                <p class="text-gray-600">📍 Tallinn, Estonia</p>
+              </div>
+              <div class="text-sm text-gray-500">
+                <span class="rounded bg-gray-100 px-2 py-1">Sep 2018 - Feb 2020</span>
+                <span class="ml-2" id="introlab-total-duration"></span>
+              </div>
+            </div>
+
+            <p class="mb-6 max-w-[600px] text-sm text-gray-700 sm:text-base">
+              Specialized in custom outsourced development. Worked on CRM systems for government
+              projects including training management and document tracking.
+            </p>
+
+            <!-- Middle Role -->
+            <div class="mb-8 ml-2 border-l-2 border-gray-300 pl-2 sm:ml-4 sm:pl-4">
+              <div class="mb-2 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+                <div>
+                  <h4 class="text-lg font-bold text-gray-800">
+                    Middle Full-Stack Developer (Java / React)
+                  </h4>
+                </div>
+                <div class="text-sm text-gray-500">
+                  <span class="rounded bg-gray-100 px-2 py-1">Jun 2019 - Feb 2020</span>
+                  <span class="ml-2" id="introlab-middle-duration"></span>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h5 class="mb-2 font-semibold text-gray-800">Responsibilities:</h5>
+                <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                  <li>
+                    Development of CRM system for government project (15 permanent users, 10,000+
+                    users in database)
+                  </li>
+                  <li>Maintaining Linux server for the backend</li>
+                  <li>Interaction with end users to gather development requirements</li>
+                  <li>Onboarding and mentoring new developers</li>
+                </ul>
+              </div>
+
+              <div>
+                <h5 class="mb-2 font-semibold text-gray-800">Technologies:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >Java 11</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >Spring Boot</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >Hibernate</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800">React</span>
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >TypeScript</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >PostgreSQL</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >Bootstrap 4</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800">Redux</span>
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800">Linux</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Junior Role -->
+            <div class="mb-8 ml-2 border-l-2 border-gray-300 pl-2 sm:ml-4 sm:pl-4">
+              <div class="mb-2 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+                <div>
+                  <h4 class="text-lg font-bold text-gray-800">
+                    Junior Full-Stack Developer (Java / React)
+                  </h4>
+                </div>
+                <div class="text-sm text-gray-500">
+                  <span class="rounded bg-gray-100 px-2 py-1">Sep 2018 - May 2019</span>
+                  <span class="ml-2" id="introlab-junior-duration"></span>
+                </div>
+              </div>
+              <p class="mb-4 max-w-[600px] text-sm text-gray-700 sm:text-base">
+                Worked on CRM system for training management including candidate selection, document
+                tracking, and preparation of documents for other departments.
+              </p>
+
+              <div class="mb-4">
+                <h5 class="mb-2 font-semibold text-gray-800">Responsibilities:</h5>
+                <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                  <li>
+                    Development of CRM system for government project (10 permanent users, 2000+
+                    users in database)
+                  </li>
+                  <li>
+                    Analyzing requirements and interaction with end users to gather development
+                    requirements
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h5 class="mb-2 font-semibold text-gray-800">Technologies:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >Java 8</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >Spring Boot</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >Hibernate</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800">React</span>
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >PostgreSQL</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800"
+                    >Bootstrap 4</span
+                  >
+                  <span class="rounded bg-indigo-100 px-2 py-1 text-xs text-indigo-800">Redux</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Three Elephants -->
+          <div class="mb-8 border-l-4 border-yellow-400 pl-3 sm:pl-6">
+            <div class="mb-2 flex flex-col lg:flex-row lg:items-start lg:justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-gray-800">Junior Java Developer</h3>
+                <h4 class="text-lg font-semibold text-yellow-600">LLC "Three Elephants"</h4>
+              </div>
+              <div class="text-sm text-gray-500">
+                <span class="rounded bg-gray-100 px-2 py-1">Nov 2017 - Aug 2018</span>
+                <span class="ml-2" id="three-elephants-duration"></span>
+              </div>
+            </div>
+            <p class="mb-2 text-gray-600">📍 Mykolayiv, Ukraine</p>
+            <p class="mb-4 max-w-[650px] text-sm text-gray-700 sm:text-base">
+              Company specialized in reselling wholesale hardware for the window market. Developed
+              program that sped up order calculations, stored product catalog, and printed
+              documents.
+            </p>
+
+            <div class="mb-4">
+              <h5 class="mb-2 font-semibold text-gray-800">Key Achievements:</h5>
+              <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                <li>
+                  Developed program to calculate cost of metal structures and print price lists (~3
+                  office users)
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="mb-2 font-semibold text-gray-800">Responsibilities:</h5>
+              <ul class="list-inside list-disc space-y-1 text-sm text-gray-700 sm:text-base">
+                <li>Development of program to calculate cost and markup for hardware sales</li>
+                <li>Development of program to print price lists from product catalog</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="mb-2 font-semibold text-gray-800">Technologies:</h5>
+              <div class="flex flex-wrap gap-2">
+                <span class="rounded bg-yellow-100 px-2 py-1 text-xs text-yellow-800">Java</span>
+                <span class="rounded bg-yellow-100 px-2 py-1 text-xs text-yellow-800">SQLite</span>
+                <span class="rounded bg-yellow-100 px-2 py-1 text-xs text-yellow-800">SQL</span>
+                <span class="rounded bg-yellow-100 px-2 py-1 text-xs text-yellow-800">Swing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript for duration calculations -->
+    <script>
+      // Calculate durations using dayjs
+      function calculateDuration(startDate, endDate = null) {
+        const start = dayjs(startDate);
+        const end = endDate ? dayjs(endDate) : dayjs();
+        const duration = end.diff(start, 'month');
+
+        const years = Math.floor(duration / 12);
+        const months = duration % 12;
+
+        let result = '';
+        if (years > 0) result += `${years} year${years > 1 ? 's' : ''}`;
+        if (months > 0) {
+          if (result) result += ' ';
+          result += `${months} month${months > 1 ? 's' : ''}`;
+        }
+
+        return `(${result})`;
+      }
+
+      // Set durations
+      document.getElementById('tgtaps-duration').textContent = calculateDuration('2024-09-01');
+
+      // Company total durations
+      document.getElementById('dataox-total-duration').textContent = calculateDuration(
+        '2020-03-01',
+        '2024-08-31',
+      );
+      document.getElementById('introlab-total-duration').textContent = calculateDuration(
+        '2018-09-01',
+        '2020-02-29',
+      );
+
+      // Individual role durations
+      document.getElementById('dataox-lead-duration').textContent = calculateDuration(
+        '2022-05-01',
+        '2024-08-31',
+      );
+      document.getElementById('dataox-senior-duration').textContent = calculateDuration(
+        '2021-03-01',
+        '2022-04-30',
+      );
+      document.getElementById('dataox-middle-duration').textContent = calculateDuration(
+        '2020-03-01',
+        '2021-02-28',
+      );
+      document.getElementById('introlab-middle-duration').textContent = calculateDuration(
+        '2019-06-01',
+        '2020-02-29',
+      );
+      document.getElementById('introlab-junior-duration').textContent = calculateDuration(
+        '2018-09-01',
+        '2019-05-31',
+      );
+      document.getElementById('three-elephants-duration').textContent = calculateDuration(
+        '2017-11-01',
+        '2018-08-31',
+      );
+    </script>
+  </body>
+</html>
