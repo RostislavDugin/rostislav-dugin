@@ -316,7 +316,12 @@
 
         <!-- Experience Section -->
         <div class="border-t border-gray-200 p-8">
-          <h2 class="mb-8 text-3xl font-bold text-gray-800">Professional Experience</h2>
+          <div class="mb-8">
+            <h2 class="mb-2 text-3xl font-bold text-gray-800">Professional Experience</h2>
+            <p class="text-lg text-gray-600">
+              <span id="total-experience-duration"></span> of professional development experience
+            </p>
+          </div>
 
           <!-- TgTaps -->
           <div class="mb-8 border-l-4 border-blue-600 pl-3 sm:pl-6">
@@ -831,6 +836,11 @@
 
       // Set durations
       document.getElementById('tgtaps-duration').textContent = calculateDuration('2024-09-01');
+
+      // Calculate total professional experience (from first job to present)
+      document.getElementById('total-experience-duration').textContent = calculateDuration(
+        '2017-11-01',
+      ).replace(/[()]/g, '');
 
       // Company total durations
       document.getElementById('dataox-total-duration').textContent = calculateDuration(
