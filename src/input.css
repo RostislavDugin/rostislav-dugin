@@ -2,20 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles from index.css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Jost', sans-serif;
-  line-height: 1.6;
-}
-
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Jost', ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 a {
@@ -37,4 +41,113 @@ input,
 textarea,
 select {
   font-family: inherit;
+}
+
+/* Pro detail: accent-colored selection */
+::selection {
+  background: #2563EB;
+  color: #FAF8F2;
+}
+
+/* Pro detail: focus-visible default (keyboard accessibility) */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Subtle scrollbar (Webkit) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD0D8;
+  border-radius: 6px;
+  border: 2px solid #FAF8F2;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Skip-to-content link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  z-index: 100;
+  padding: 0.5rem 0.875rem;
+  background: #0F172A;
+  color: #FAF8F2;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.skip-link:focus {
+  left: 8px;
+}
+
+/* "Available" status indicator pulse — respects reduced motion */
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.5; transform: scale(0.9); }
+}
+.status-dot {
+  animation: pulse-soft 2.4s ease-in-out infinite;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print stylesheet — clean CV output */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #0F172A !important;
+    font-size: 10.5pt;
+  }
+  a {
+    color: #0F172A !important;
+    text-decoration: underline;
+  }
+  .no-print, header.skip-link, .skip-link {
+    display: none !important;
+  }
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  section, article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  article {
+    border: 1px solid #CBD0D8 !important;
+    box-shadow: none !important;
+  }
+  img {
+    filter: grayscale(100%);
+  }
+  /* Reveal link URLs after text */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #52617A;
+  }
+  a[href^="mailto"]::after, a[href^="#"]::after {
+    content: "";
+  }
 }
